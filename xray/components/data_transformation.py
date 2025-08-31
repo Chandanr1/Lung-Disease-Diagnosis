@@ -16,8 +16,6 @@ class DataTransformation:
     def __init__(self, data_transformation_config: DataTransformationConfig ,data_ingestion_artifact: DataIngestionArtifact):
             self.data_transformation_config = data_transformation_config
             self.data_ingestion_artifact = data_ingestion_artifact
-            self.batch_size = batch_size
-
     def transforming_training_data(self) ->  transforms.Compose:
         try:
             logging.info(f"Applying data transformations on training and testing data")
