@@ -4,7 +4,7 @@ import sys
 import bentoml
 import torch
 import joblib
-import torch.nnfunctional as F
+import torch.nn.functional as F
 from troch.nn import Module
 from torch.optim import Optimizer
 from torch.optim.lr_scheduler import _LRScheduler, StepLR
