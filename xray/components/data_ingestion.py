@@ -2,7 +2,7 @@ import sys
 
 from xray.cloud_storage.s3_operations import S3Operation
 from xray.constant.training_pipeline import *
-from xray.entity.artifacts_entity import DataIngestionArtifacts
+from xray.entity.artifacts_entity import DataIngestionArtifact
 from xray.entity.config_entity import DataIngestionConfig
 from xray.exception import XRayException
 from xray.logger import logging
@@ -23,12 +23,12 @@ class DataIngestion:
             logging.info(f"Data downloaded from cloud storage to local folder")
         except Exception as e:
             raise XRayException(e, sys)
-    def initiate_data_ingestion(self) -> DataIngestionArtifacts:
+    def initiate_data_ingestion(self) -> DataIngestionArtifact:
         logging.info(f"Starting data ingestion")
         try:
             
             self.get_data_from_s3()
-            data_ingestion_artifact : DataIngestionArtifacts = DataIngestionArtifacts(
+            data_ingestion_artifact : DataIngestionArtifact = DataIngestionArtifact(
                 train_file_path=self.data_ingestion_config.train_data_path,
                 test_file_path=self.data_ingestion_config.test_data_path,
             )
