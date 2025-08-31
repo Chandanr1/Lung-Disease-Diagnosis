@@ -12,7 +12,7 @@ from torch.utils.data import Dataset
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 
-from xray.constants.training_pipeline import *
+from xray.constant.training_pipeline import *
 from xray.entity.artifacts_entity import ( DataTransformationArtifact, ModelTrainerArtifact)
 from xray.entity.config_entity import  ModelTrainerConfig
 from xray.exception import XRayException
