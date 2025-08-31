@@ -5,6 +5,7 @@ torchvision==0.16.0
 tqdm==4.64.1
 wincertstore==0.2
 torchsummary==1.5.1
+starlette==0.20.4
 #matplotlib==3.5.1
 opencv-python
 fastapi
