@@ -24,7 +24,7 @@ class DataTransformation:
               transforms.CenterCrop(self.data_transformation_config.CENTER_CROP),
               transforms.ColorJitter( **self.data_transformation_config.color_jitter_transforms),
               transforms.RandomHorizontalFlip(),
-              transforms.RandomRotation(self.data_transformation_config.RANDOM_ROTATION),
+              transforms.RandomRotation(10),
               transforms.ToTensor(),
               transforms.Normalize(**self.data_transformation_config.normalize_transforms),
             ])
