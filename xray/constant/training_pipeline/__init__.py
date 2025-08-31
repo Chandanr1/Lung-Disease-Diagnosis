@@ -26,7 +26,7 @@ HUE: int = 0.1
 
 RESIZE: int = 224
 
-CENTER_CROP: int = 224
+CENTERCROP: int = 224
 
 RANDOMROTATION: int = 10
 
