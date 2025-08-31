@@ -6,6 +6,7 @@ import joblib
 from torch.utils.data import DataLoader, dataset
 from torchvision import  transforms
 from torchvision.datasets import ImageFolder
+from xray.entity.config_entity import DataTransformationConfig
 
 from xray.entity.artifacts_entity import (DataIngestionArtifact, DataTransformationArtifact)
 from xray.exception import XRayException
