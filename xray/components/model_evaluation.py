@@ -16,9 +16,9 @@ from xray.ml.model.arch import Net
 
 class ModelEvaluation:
     def __init__(self, data_transformation_artifact: DataTransformationArtifact,model_evaluation_config: ModelEvaluationConfig,model_trainer_artifact: ModelTrainerArtifact):
-            self.data_transformation_artifact: data_transformation_artifact,
-            self.model_evaluation_config  : model_evaluation_config,
-            self.data_transformation_artifact: data_transformation_artifact,
+            self.data_transformation_artifact= data_transformation_artifact,
+            self.model_evaluation_config  = model_evaluation_config,
+            self.data_transformation_artifact= data_transformation_artifact,
 
     def configuration(self) -> Tuple[DataLoader,Module,float, Optimizer]:
         try:
